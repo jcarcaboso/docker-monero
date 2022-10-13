@@ -17,7 +17,6 @@ RUN cp -r xmrig-6.18.0/* ./
 RUN sysctl -w vm.nr_hugepages=1168
 
 COPY ./entrypoint.sh .
-RUN ls -a
 RUN chmod +x ./entrypoint.sh
 
 ENTRYPOINT ["./entrypoint.sh"]
