@@ -1,2 +1,7 @@
 #!/bin/bash
-./xmrig -o $POOL -u $WALLET -p $NAME
+./xmrig \
+-c "monero" \
+-o $POOL \
+-u $WALLET \
+-p $PASSWORD \
+-k --tls
